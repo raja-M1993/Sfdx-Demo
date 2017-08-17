@@ -152,7 +152,7 @@ else
 
 	
 		//click Login
-	    driver.navigate().to("apex/Home?core.apexpages.request.devconsole=1");
+	    driver.navigate().to("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 		driver.findElement(By.name("j_id0:j_id2:j_id5")).click();
 }
 	@Test(priority =1)
