@@ -47,7 +47,7 @@ public class UserDetails_grid
 		{
 			System.out.println("Executing on Firefox");
 			System.out.println("********************");
-			String Node = "http://182.19.39.173:4449/wd/hub";
+			String Node = "http://192.168.100.109:4449/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			cap.setBrowserName("firefox");
 			cap.setPlatform(Platform.WIN10);
@@ -61,7 +61,7 @@ public class UserDetails_grid
 		{
 			System.out.println("Executing on Chrome");
 			System.out.println("*******************");
-			String Node = "http://182.19.39.173:4450/wd/hub";
+			String Node = "http://192.168.100.109:4450/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.WIN10);
