@@ -35,19 +35,19 @@ public class UserDetails_grid
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		System.out.println("Salesforce Login succesfully!!!");
 		//driver.navigate().to("http://c.ap5.visual.force.com/apex/Home");
-		driver.get("https://java-velocity-7507-dev-ed--c.cs90.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
+		driver.get("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 	}
 
 	@Parameters("browser")
 	@BeforeTest
 	public void testgrid(String browser) throws MalformedURLException 
 	{
-		String URL = "https://java-velocity-7507-dev-ed--c.cs90.visual.force.com/apex/Home?core.apexpages.request.devconsole=1";
+		String URL = "https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1";
 		if (browser.equalsIgnoreCase("firefox")) 
 		{
 			System.out.println("Executing on Firefox");
 			System.out.println("********************");
-			String Node = "http://182.19.39.173:3335/wd/hub";
+			String Node = "http://182.19.39.173:4449/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			cap.setBrowserName("firefox");
 			cap.setPlatform(Platform.WIN10);
@@ -61,7 +61,7 @@ public class UserDetails_grid
 		{
 			System.out.println("Executing on Chrome");
 			System.out.println("*******************");
-			String Node = "http://182.19.39.173:3336/wd/hub";
+			String Node = "http://182.19.39.173:4450/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.WIN10);
@@ -152,7 +152,7 @@ else
 
 	
 		//click Login
-	    driver.navigate().to("https://java-velocity-7507-dev-ed--c.cs90.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
+	    driver.navigate().to("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 		driver.findElement(By.name("j_id0:j_id2:j_id5")).click();
 }
 	@Test(priority =1)
