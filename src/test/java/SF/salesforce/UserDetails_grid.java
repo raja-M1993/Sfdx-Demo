@@ -35,7 +35,7 @@ public class UserDetails_grid
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		System.out.println("Salesforce Login succesfully!!!");
 		//driver.navigate().to("http://c.ap5.visual.force.com/apex/Home");
-		driver.get("apex/Home?core.apexpages.request.devconsole=1");
+		driver.get("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 	}
 
 	@Parameters("browser")
