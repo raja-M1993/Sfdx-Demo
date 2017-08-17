@@ -27,14 +27,14 @@ public class UserDetails_grid
 	public void sflogin() 
 	{
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
-		//driver.get("http://c.ap5.visual.force.com/apex/Home");
+		//driver.get("/apex/Home");
 		driver.findElement(By.id("username")).sendKeys("test-cfgk1svera0g@demo_company.net");
 		driver.findElement(By.id("password")).sendKeys("oQ0]|HI$A!");
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		driver.findElement(By.id("Login")).click();
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		System.out.println("Salesforce Login succesfully!!!");
-		//driver.navigate().to("http://c.ap5.visual.force.com/apex/Home");
+		//driver.navigate().to("/apex/Home");
 		driver.get("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 	}
 
@@ -77,7 +77,7 @@ public void Signup()
 	
     //System.out.println(cal.getTime());
         //Verifying Home Page
-		//driver.navigate().to("http://c.ap5.visual.force.com/apex/Home");
+		//driver.navigate().to("/apex/Home");
 	    driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		System.out.println(driver.getTitle());
 		
@@ -125,7 +125,7 @@ if ("UserDetails-Home".equals(driver.getTitle()))
 					System.out.println("---------------------------------");
 					
 		//if not,redirect to Home and verify Login			
-					/*driver.navigate().to("http://c.ap5.visual.force.com/apex/Home");
+					/*driver.navigate().to("/apex/Home");
 					driver.findElement(By.name("j_id0:j_id2:j_id5")).click();
 					driver.findElement(By.name("j_id0:login_form:un")).sendKeys("Arun");
 					driver.findElement(By.name("j_id0:login_form:pwd")).sendKeys("Arun");
@@ -152,7 +152,7 @@ else
 
 	
 		//click Login
-	    driver.navigate().to("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
+	    driver.navigate().to("/apex/Home");
 		driver.findElement(By.name("j_id0:j_id2:j_id5")).click();
 }
 	@Test(priority =1)
@@ -223,7 +223,7 @@ else
 					driver.findElement(By.name("editable:j_id2:j_id12")).click();
 
 					// Back to Home
-					//driver.get("https://c.ap5.visual.force.com/apex/Home");
+					//driver.get("/apex/Home");
 	}
 
 
