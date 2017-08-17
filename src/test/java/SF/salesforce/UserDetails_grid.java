@@ -217,7 +217,7 @@ else
 					driver.findElement(By.name("editable:j_id2:edit")).click();
 
 					// Edit values
-					driver.findElement(By.name("editable:j_id2:j_id6")).sendKeys("a" + id);
+					driver.findElement(By.name("editable:j_id2:j_id6")).sendKeys("sdf.format(cal.getTime())" + id);
 					driver.findElement(By.name("editable:j_id2:j_id8")).sendKeys("a");
 					driver.findElement(By.name("editable:j_id2:j_id10")).sendKeys("a");
 					driver.findElement(By.name("editable:j_id2:j_id12")).click();
