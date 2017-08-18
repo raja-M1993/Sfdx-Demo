@@ -30,9 +30,9 @@ public class UserDetails_grid
 		//driver.get("/apex/Home");
 		driver.findElement(By.id("username")).sendKeys(System.getProperty("param1"));
 		driver.findElement(By.id("password")).sendKeys(System.getProperty("param2"));
-		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(600,TimeUnit.SECONDS);
 		driver.findElement(By.id("Login")).click();
-		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(600,TimeUnit.SECONDS);
 		System.out.println("Salesforce Login succesfully!!!");
 		//driver.navigate().to("/apex/Home");
 		//driver.get("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
