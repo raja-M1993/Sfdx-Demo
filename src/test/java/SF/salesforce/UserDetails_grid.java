@@ -36,7 +36,7 @@ public class UserDetails_grid
 		System.out.println("Salesforce Login succesfully!!!");
 		//driver.navigate().to("/apex/Home");
 		//driver.get("https://speed-ability-8189-dev-ed--c.cs65.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
-		driver.get("https://c.ap5.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
+		driver.get("https://c.ap4.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 		
 	}
 
@@ -44,7 +44,7 @@ public class UserDetails_grid
 	@BeforeTest
 	public void testgrid(String browser) throws MalformedURLException 
 	{
-		String URL = "https://c.ap5.visual.force.com/apex/Home";
+		String URL = "https://c.ap4.visual.force.com/apex/Home";
 		if (browser.equalsIgnoreCase("firefox")) 
 		{
 			System.out.println("Executing on Firefox");
@@ -154,7 +154,7 @@ else
 
 	
 		//click Login
-	    driver.navigate().to("https://c.ap5.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
+	    driver.navigate().to("https://c.ap4.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 		driver.findElement(By.name("j_id0:j_id2:j_id5")).click();
 }
 	@Test(priority =1)
